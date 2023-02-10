@@ -1,4 +1,7 @@
 import React from "react";
+import archer from "../images/archer_screenshot.png";
+import whiskord from "../images/whiskord_screenshot.png";
+import treebnb from "../images/treebnb_screenshot.png";
 
 const Work = () => {
     const handleClick = (link) => {
@@ -14,7 +17,8 @@ const Work = () => {
                 `Delivered a Robinhood-inspired experience, enabling users to trade over 7,500 stocks, monitor portfolio, create watchlists, and stay informed with financial news updates.`,
                 `Implemented interactive charts for stock monitoring and portfolio management, utilizing financial APIs for real-time data updates.`,
                 `Crafted a user-friendly interface with React, Redux, and ensured efficient database management with SQLAlchemy and PostgreSQL.`],
-            image: "https://fontawesome.com/social/bow-arrow?f=classic&s=&v=5",
+            image_link: "https://fontawesome.com/social/bow-arrow?f=classic&s=&v=5",
+            image: archer,
             live_link: "https://archer.onrender.com/",
             repo_link: 'https://github.com/andrew-bierman/Archer'
         },
@@ -27,7 +31,8 @@ const Work = () => {
                 "Worked in collaboration with three other engineers to manage tasks and version control through Git.",
                 "Utilized WebSocket and Socket.io library for real-time communication for all message CRUD features"
             ],
-            image: "https://fontawesome.com/social/cat?f=classic&s=&v=5",
+            image_link: "https://fontawesome.com/social/cat?f=classic&s=&v=5",
+            image: whiskord,
             live_link: "https://whiskord-htb4.onrender.com/",
             repo_link: 'https://github.com/Me-legna/Whiskord'
         },
@@ -40,7 +45,8 @@ const Work = () => {
                 "Deployed a fully functional Express REST API for efficient data management and front-end/back-end communication.",
                 "Created a dynamic, responsive, and user-friendly front-end using React and Redux to provide an optimal user experience.",
             ],
-            image: "https://fontawesome.com/social/tree?f=classic&s=&v=5",
+            image_link: "https://fontawesome.com/social/tree?f=classic&s=&v=5",
+            image: treebnb,
             live_link: "https://treebnb.onrender.com/",
             repo_link: 'https://github.com/andrew-bierman/TreeBnb'
         },
