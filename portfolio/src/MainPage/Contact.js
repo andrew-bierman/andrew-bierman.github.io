@@ -104,7 +104,7 @@ const Contact = () => {
                                             <div className="control">
                                                 <textarea
                                                     className="textarea"
-                                                    placeholder="Textarea"
+                                                    placeholder="Message..."
                                                     name="Message"
                                                 ></textarea>
                                             </div>
