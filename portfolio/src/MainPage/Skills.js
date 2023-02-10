@@ -3,8 +3,8 @@ import React from 'react';
 const Skills = () => {
     return (
         <>
-            {/* <!-- Begin Services Content --> */}
-            < div className="section-color services" id="services" >
+            {/* <!-- Begin skills Content --> */}
+            < div className="section-color services" id="skills" >
                 <div className="container">
                     <div className="columns is-multiline">
                         <div
@@ -15,8 +15,7 @@ const Skills = () => {
                             <h1 className="title has-text-centered section-title">Skills</h1>
 
                             <h2 className="subtitle">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                                eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                I have experience with the following technologies:
                             </h2>
                             <br />
                         </div>
@@ -67,8 +66,7 @@ const Skills = () => {
                                 <i className="fa-brands fa-js"></i>
                                 <hr />
                                 <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    JavaScript is a high-level, interpreted programming language.
                                 </h2>
                             </div>
                             <div
@@ -79,8 +77,7 @@ const Skills = () => {
                                 <i className="fa-brands fa-python"></i>
                                 <hr />
                                 <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    Python is an interpreted, high-level and general-purpose programming language.
                                 </h2>
                             </div>
                             <div
@@ -92,8 +89,7 @@ const Skills = () => {
                                 <i className="fa-brands fa-react"></i>
                                 <hr />
                                 <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    React is an open-source, front end, JavaScript library for building user interfaces or UI components.
                                 </h2>
                             </div>
                         </div>
@@ -144,8 +140,7 @@ const Skills = () => {
                                 <i className="fa-brands fa-node"></i>
                                 <hr />
                                 <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser.
                                 </h2>
                             </div>
                             <div
@@ -157,8 +152,7 @@ const Skills = () => {
                                 <i className="fa-solid fa-database"></i>
                                 <hr />
                                 <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    A database is an organized collection of data, generally stored and accessed electronically from a computer system. Experience with PostgreSQL, MongoDB, and SQLite.
                                 </h2>
                             </div>
                             <div
@@ -170,8 +164,7 @@ const Skills = () => {
                                 <i className="fa-solid fa-server"></i>
                                 <hr />
                                 <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    A server is a computer program or a device that provides functionality for other programs or devices, called "clients". Experience with Express.js and Flask.
                                 </h2>
                             </div>
                         </div>
@@ -223,8 +216,7 @@ const Skills = () => {
                                 <i className="fa-brands fa-git-alt"></i>
                                 <hr />
                                 <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    Git is a distributed version-control system for tracking changes in source code during software development. Experience with Git and GitHub.
                                 </h2>
                             </div>
                             <div
@@ -237,8 +229,7 @@ const Skills = () => {
                                 <i className="fa-brands fa-aws"></i>
                                 <hr />
                                 <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    Amazon Web Services (AWS) provides on-demand cloud computing platforms and APIs to individuals, companies, and governments.
                                 </h2>
                             </div>
                             <div
@@ -251,15 +242,14 @@ const Skills = () => {
                                 <i className="fa-solid fa-paintbrush"></i>
                                 <hr />
                                 <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                                    For design and media production, I utilize the entire Adobe Creative Suite (Figma, Photoshop, Illustrator, Premiere Pro, and After Effects).
                                 </h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div >
-            {/* <!-- End Services Content --> */}
+            {/* <!-- End skills Content --> */}
         </>
     )
 }

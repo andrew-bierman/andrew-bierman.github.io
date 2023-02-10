@@ -8,6 +8,7 @@ import AboutMe from './AboutMe';
 import Work from './Work';
 import ViewResume from './ViewResume';
 import Skills from './Skills';
+import Contact from './Contact';
 import AOS from 'aos';
 
 const MainPage = () => {
@@ -50,51 +51,6 @@ const MainPage = () => {
                         <Navbar />
 
                         {/* <!-- Begin Mobile Nav --> */}
-
-                        {/* <nav className="navbar is-transparent is-hidden-desktop"> */}
-                        {/* <!-- Begin Burger Menu --> */}
-                        {/* <div className="navbar-brand">
-                            <div className="navbar-burger burger" data-target="mobile-nav">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div> */}
-                        {/* <!-- End Burger Menu --> */}
-                        {/* <div id="mobile-nav" className="navbar-menu">
-                            <div className="navbar-end"> */}
-                        {/* <div className="navbar-item">
-                                    <a className="navbar-item" href="#home">
-                                        Home
-                                    </a>
-                                </div>
-                                <div className="navbar-item">
-                                    <a className="navbar-item" href="#about-me">
-                                        About Me
-                                    </a>
-                                </div>
-                                <div className="navbar-item">
-                                    <a className="navbar-item" href="#services">
-                                        Services
-                                    </a>
-                                </div>
-                                <div className="navbar-item">
-                                    <a className="navbar-item" href="#skills">
-                                        Skills
-                                    </a>
-                                </div>
-                                <div className="navbar-item">
-                                    <a className="navbar-item" href="#my-work">
-                                        My Work
-                                    </a>
-                                </div>
-                                <div className="navbar-item">
-                                    <a className="navbar-item" href="#contact">
-                                        Contact
-                                    </a>
-                                </div> */}
-                        {/* </div>
-                        </div> */}
                         {/* </nav> */}
                         {/* <!-- End Mobile Nav --> */}
                         {/* <!-- Begin Hero Content--> */}
@@ -110,17 +66,17 @@ const MainPage = () => {
                         <div className="hero-foot ">
                             <div className="hero-foot--wrapper">
                                 <div className="columns">
-                                    <div className="column is-12 hero-menu-desktop has-text-centered">
+                                    <div className="column is-12 hero-menu-desktop has-text-centered ">
                                         <ul>
-                                            <li className="is-active">
+                                            <li className="is-active has-text-primary">
                                                 <a href="#home">Home</a>
                                             </li>
                                             <li>
                                                 <a href="#about-me">About Me</a>
                                             </li>
-                                            <li>
+                                            {/* <li>
                                                 <a href="#services">Services</a>
-                                            </li>
+                                            </li> */}
                                             <li>
                                                 <a href="#skills">Skills</a>
                                             </li>
@@ -202,74 +158,7 @@ const MainPage = () => {
                     {/* <!-- End View Resume Section */}
 
                     {/* <!-- Begin Contact Content --> */}
-                    <div className="section-light contact" id="contact">
-                        <div className="container">
-                            <div
-                                className="columns is-multiline"
-                                data-aos="fade-in-up"
-                                data-aos-easing="linear"
-                            >
-                                <div className="column is-12 about-me">
-                                    <h1 className="title has-text-centered section-title">
-                                        Get in touch
-                                    </h1>
-                                </div>
-                                <div className="column is-8 is-offset-2">
-                                    <form
-                                        action="https://formspree.io/email@example.com"
-                                        method="POST"
-                                    >
-                                        <div className="field">
-                                            <label className="label">Name</label>
-                                            <div className="control has-icons-left">
-                                                <input
-                                                    className="input"
-                                                    type="text"
-                                                    placeholder="Ex. Jane Smith"
-                                                    name="Name"
-                                                />
-                                                <span className="icon is-small is-left">
-                                                    <i className="fas fa-user"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="field">
-                                            <label className="label">Email</label>
-                                            <div className="control has-icons-left">
-                                                <input
-                                                    className="input"
-                                                    type="email"
-                                                    placeholder="Ex. hello@arctheme.com"
-                                                    name="Email"
-                                                />
-                                                <span className="icon is-small is-left">
-                                                    <i className="fas fa-envelope"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="field">
-                                            <label className="label">Message</label>
-                                            <div className="control">
-                                                <textarea
-                                                    className="textarea"
-                                                    placeholder="Textarea"
-                                                    name="Message"
-                                                ></textarea>
-                                            </div>
-                                        </div>
-                                        <div className="field">
-                                            <div className="control ">
-                                                <button className="button submit-button">
-                                                    Submit&nbsp;&nbsp;
-                                                    <i className="fas fa-paper-plane"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <Contact />
                     {/* <!-- End Contact Content --> */}
 
                 </div>

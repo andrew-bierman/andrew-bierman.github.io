@@ -29,3 +29,20 @@ figure.work-item:nth-child(2) {
 .work-item:nth-child(8) {
     background-image: url('https://picsum.photos/320/180?image=70');
 }
+
+.custom-card {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.custom-card-footer {
+    position: relative;
+    margin-top: auto;
+    padding-top: 0;
+    margin-bottom: 0;
+    bottom: 0;
+    width: 100%;
+    bottom: 0;
+}

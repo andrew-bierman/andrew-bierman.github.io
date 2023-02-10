@@ -1,28 +1,48 @@
 import React from "react";
 
 const Work = () => {
+    const handleClick = (link) => {
+        window.open(link);
+    };
 
     const cards = [
         {
             title: "Archer",
             subtitle: "A real-time stock exchange platform",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing",
+            description: [
+                `Tech Stack: JavaScript, Python, Flask, React/Redux, SQLAlchemy, and PostgreSQL.`,
+                `Delivered a Robinhood-inspired experience, enabling users to trade over 7,500 stocks, monitor portfolio, create watchlists, and stay informed with financial news updates.`,
+                `Implemented interactive charts for stock monitoring and portfolio management, utilizing financial APIs for real-time data updates.`,
+                `Crafted a user-friendly interface with React, Redux, and ensured efficient database management with SQLAlchemy and PostgreSQL.`],
             image: "https://fontawesome.com/social/bow-arrow?f=classic&s=&v=5",
-            link: "https://archer.onrender.com/"
+            live_link: "https://archer.onrender.com/",
+            repo_link: 'https://github.com/andrew-bierman/Archer'
         },
         {
             title: "Whiskord",
             subtitle: "A real-time messaging application",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing",
+            description: [
+                "Tech Stack: JavaScript, Python, Flask, SocketIO, React/Redux, SQLAlchemy, and PostgreSQL",
+                "Facilitated seamless communication with a platform allowing users to join/create servers, channels, and direct messages.",
+                "Worked in collaboration with three other engineers to manage tasks and version control through Git.",
+                "Utilized WebSocket and Socket.io library for real-time communication for all message CRUD features"
+            ],
             image: "https://fontawesome.com/social/cat?f=classic&s=&v=5",
-            link: "https://whiskord-htb4.onrender.com/"
+            live_link: "https://whiskord-htb4.onrender.com/",
+            repo_link: 'https://github.com/Me-legna/Whiskord'
         },
         {
             title: "TreeBnb",
             subtitle: "A treehouse rental platform",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing",
+            description: [
+                "Built a treehouse rental platform with JavaScript, Node.js, Express, and React/Redux",
+                "Developed a user-friendly application inspired by Airbnb, allowing users to create listings, schedule bookings, and leave reviews.",
+                "Deployed a fully functional Express REST API for efficient data management and front-end/back-end communication.",
+                "Created a dynamic, responsive, and user-friendly front-end using React and Redux to provide an optimal user experience.",
+            ],
             image: "https://fontawesome.com/social/tree?f=classic&s=&v=5",
-            link: "https://treebnb.onrender.com/"
+            live_link: "https://treebnb.onrender.com/",
+            repo_link: 'https://github.com/andrew-bierman/TreeBnb'
         },
     ]
 
@@ -45,36 +65,69 @@ const Work = () => {
                         {/* <div id="app" className="row columns is-multiline"> */}
                         {cards.map((card, index) => (
                             <div className="column is-4" key={index}>
-                                <div className="card large">
+                                <div className="card is-fullheight is-justify-content-space-between custom-card">
                                     <div className="card-image">
                                         <figure className="image is-16by9">
                                             <img src={card.image} alt="Image" />
                                         </figure>
                                     </div>
-                                    <div className="card-content">
-                                        <div className="media">
-                                            {/* <div className="media-left">
-                                                            <figure className="image is-48x48">
-                                                                <img src="card.avatar" alt="Image" />
-                                                            </figure>
-                                                        </div> */}
-                                            <div className="media-content">
-                                                <p className="title is-4 no-padding"></p>
-                                                <p>
-                                                    <span className="title is-6">
-                                                        <a href={card.link}>
-                                                            {card.title}
-                                                        </a>
-                                                    </span>
-                                                </p>
-                                                <p className="subtitle is-6">
-                                                    {card.subtitle}
-                                                </p>
+
+                                    <div className="card-header">
+                                        <div className="media-content block">
+                                            <p className="title is-4"></p>
+                                            <div>
+                                                <span className="title is-3 block">
+                                                    <a href={card.live_link}>
+                                                        {card.title}
+                                                    </a>
+                                                </span>
+                                            </div>
+                                            <div className="block"></div>
+                                            <div className="subtitle is-5 block">
+                                                {card.subtitle}
                                             </div>
                                         </div>
-                                        <div className="content">
-                                            {card.description}
+                                    </div>
+                                    <div className="card-content">
+                                        <div className="content has-text-left">
+                                            <ul>
+                                                {card.description.map((bullet, index) => (
+                                                    <div key={index}>
+                                                        {index > 0 ?
+                                                            <li key={index} className='block'>
+                                                                {bullet}
+                                                            </li>
+                                                            :
+                                                            <li key={index} className='block'>
+                                                                <strong>
+                                                                    {bullet}
+                                                                </strong>
+                                                            </li>
+                                                        }
+                                                    </div>
+                                                ))}
+                                            </ul>
+
                                         </div>
+                                    </div>
+                                    <div className="card-footer custom-card-footer">
+                                        <a className='card-footer-item'>
+                                            <button className="button is-info is-outlined" onClick={() => handleClick(card.repo_link)}>
+                                                <span className="icon">
+                                                    <i className="fab fa-github"></i>
+                                                </span>
+                                                <span>View Repo</span>
+                                            </button>
+                                        </a>
+
+                                        <a className='card-footer-item'>
+                                            <button className="button is-info is-outlined" onClick={() => handleClick(card.live_link)}>
+                                                <span className="icon">
+                                                    <i className="fas fa-external-link-alt"></i>
+                                                </span>
+                                                <span>Live Demo</span>
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

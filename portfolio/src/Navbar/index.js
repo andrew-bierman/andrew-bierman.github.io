@@ -7,12 +7,12 @@ function Navbar() {
         <nav className='navbar is-transparent is-hidden-desktop' role='navigation' aria-label='main navigation'>
             <div className='navbar-brand'>
                 <a href='/' className='navbar-item'>
-                    <img
-                        src='https://bulma.io/images/bulma-logo.png'
+                    {/* <img
+                        // src='https://bulma.io/images/bulma-logo.png'
                         alt='Logo'
                         width='112'
                         height='28'
-                    />
+                    /> */}
                 </a>
 
                 <a

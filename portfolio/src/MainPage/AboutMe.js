@@ -1,4 +1,7 @@
 import React from 'react'
+// import '../images/coding_pic.jpg'
+import about_me_pic from '../images/about_me_pic.jpg'
+import headshot from '../images/headshot.jpg'
 
 const AboutMe = () => {
     return (
@@ -31,56 +34,84 @@ const AboutMe = () => {
                                 My strong communication skills and project management experience, developed through my previous role as Communications Manager, enable me to work effectively with team members and deliver high-quality results. I hold a Bachelor's Degree in Communications & Business from the University of Colorado @ Boulder.
                             </p>
                             <br />
+                            <p>
+                                <strong>
+                                    <i className="fad fa-solid fa-map-marker-alt fa-lg"></i>
+                                    &nbsp;
+                                    Washington D.C.
+                                </strong>
+                            </p>
+                            <br></br>
                             <div className="is-divider"></div>
                             <div className="columns about-links">
-                                <div className="column">
+                                {/* <div className="column">
                                     <p className="heading">
                                         <strong>Email Me</strong>
                                     </p>
                                     <p className="subheading">
-                                        hello@example.com
+                                        abbierman101@gmail.com
                                     </p>
-                                </div>
+                                </div> */}
                                 <div className="column">
-                                    <p className="heading">
+                                    {/* <p className="heading">
                                         <strong>LinkedIn</strong>
-                                    </p>
-                                    <p className="subheading">
-                                        <span>
-                                            <a href="https://www.linkedin.com/in/andrew-bierman/">
-                                                <i className="fab fa-linkedin fa-lg"></i>
-                                            </a>
+                                    </p> */}
+                                    {/* <p className="subheading"> */}
+                                    <a href="https://www.linkedin.com/in/andrew-bierman/">
+                                        <span className='icon is-large'>
+                                            <span className='icon'>
+                                                <i className="fab fa-linkedin fa-2x">
+                                                </i>
+                                            </span>
                                         </span>
-                                    </p>
+                                    </a>
+                                    {/* </p> */}
                                 </div>
                                 <div className="column">
-                                    <p className="heading">
+                                    {/* <p className="heading">
                                         <strong>GitHub</strong>
-                                    </p>
-                                    <p className="subheading">
-                                        <span>
-                                            <a href="https://github.com/andrew-bierman">
-                                                <i className="fab fa-github fa-lg"></i>
-                                            </a>
+                                    </p> */}
+                                    {/* <p className="subheading"> */}
+                                    <a href="https://github.com/andrew-bierman">
+                                        <span className='icon is-large'>
+                                            <span>
+                                                <i className="fab fa-github fa-2x">
+                                                </i>
+                                            </span>
                                         </span>
-                                    </p>
+                                    </a>
+                                    {/* </p> */}
                                 </div>
                                 <div className="column">
                                     <p className="heading">
                                         <strong>View my full portfolio</strong>
                                     </p>
                                     <p className="subheading">
-                                        andrewbierman.com
+                                        <a href='https://andrewbierman.com/'>
+                                            andrewbierman.com
+                                        </a>
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div className="column is-6 right-image " data-aos="fade-left">
-                            <img
+                        <div className="column is-6 right-image is-vcentered" data-aos="fade-left">
+                            <figure className='box is-vcentered is-inline-block  is-rounded m-0' style={{maxWidth: '400px'}}>
+                                <img
+                                    className="is-rounded is-vcentered m-0"
+                                    // src="https://picsum.photos/id/366/600/375"
+                                    src={headshot}
+                                    // src="../images/about_me_pic.jpg"
+                                    alt=""
+                                />
+
+                            </figure>
+                            {/* <img
                                 className="is-rounded"
-                                src="https://picsum.photos/id/366/600/375"
+                                // src="https://picsum.photos/id/366/600/375"
+                                src='https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80'
+                                // src="../images/about_me_pic.jpg"
                                 alt=""
-                            />
+                            /> */}
                         </div>
                     </div>
                 </div>
