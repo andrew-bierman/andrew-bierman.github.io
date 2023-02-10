@@ -1,0 +1,31 @@
+figure.work-item:first-child {
+    background-image: url('https://picsum.photos/320/180?image=0');
+}
+
+figure.work-item:nth-child(2) {
+    background-image: url('https://picsum.photos/320/180?image=10');
+}
+
+.work-item:nth-child(3) {
+    background-image: url('https://picsum.photos/320/180?image=20');
+}
+
+.work-item:nth-child(4) {
+    background-image: url('https://picsum.photos/320/180?image=30');
+}
+
+.work-item:nth-child(5) {
+    background-image: url('https://picsum.photos/320/180?image=40');
+}
+
+.work-item:nth-child(6) {
+    background-image: url('https://picsum.photos/320/180?image=50');
+}
+
+.work-item:nth-child(7) {
+    background-image: url('https://picsum.photos/320/180?image=60');
+}
+
+.work-item:nth-child(8) {
+    background-image: url('https://picsum.photos/320/180?image=70');
+}
