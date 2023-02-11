@@ -152,7 +152,7 @@ const Skills = () => {
                                 <i className="fa-solid fa-database"></i>
                                 <hr />
                                 <h2>
-                                    A database is an organized collection of data, generally stored and accessed electronically from a computer system. Experience with PostgreSQL, MongoDB, and SQLite.
+                                    A database is an organized collection of data stored and accessed electronically. Experience with PostgreSQL, MongoDB, and SQLite.
                                 </h2>
                             </div>
                             <div
@@ -164,7 +164,7 @@ const Skills = () => {
                                 <i className="fa-solid fa-server"></i>
                                 <hr />
                                 <h2>
-                                    A server is a computer program or a device that provides functionality for other programs or devices, called "clients". Experience with Express.js and Flask.
+                                    A server is a computer program or a device that provides functionality for other programs or devices. Experience with Express.js and Flask.
                                 </h2>
                             </div>
                         </div>
