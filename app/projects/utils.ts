@@ -1,4 +1,4 @@
-import { formatDate } from 'app/blog/utils'
+import { projects } from 'app/projects/data'
 
 export type ProjectMetadata = {
   title: string
@@ -6,25 +6,41 @@ export type ProjectMetadata = {
   summary: string
   techStack?: string[]
   link?: string
+  description?: string
 }
 
 export type Project = {
   metadata: ProjectMetadata
   slug: string
+  content?: string
 }
 
 export function getProjectPosts(): Project[] {
-  const posts = ((context: any) => {
-    return context.keys().map((key: string) => {
-      const post = key.slice(2)
-      return {
-        slug: post.replace('/page.tsx', ''),
-      }
-    })
-  })(require.context('./posts', false, /\.mdx$/))
-
-  return posts.map((post: any) => ({
-    metadata: (require('./posts/' + post.slug + '.mdx') as any).metadata,
-    slug: post.slug,
+  return projects.map((project) => ({
+    slug: project.slug,
+    metadata: {
+      title: project.title,
+      publishedAt: project.publishedAt,
+      summary: project.summary,
+      techStack: project.techStack,
+      link: project.link,
+    },
+    content: project.description,
   }))
+}
+
+export function getProjectBySlug(slug: string) {
+  const project = projects.find((p) => p.slug === slug)
+  if (!project) return null
+  return {
+    slug: project.slug,
+    metadata: {
+      title: project.title,
+      publishedAt: project.publishedAt,
+      summary: project.summary,
+      techStack: project.techStack,
+      link: project.link,
+    },
+    content: project.description,
+  }
 }

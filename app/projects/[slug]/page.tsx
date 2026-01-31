@@ -1,8 +1,6 @@
 import { notFound } from 'next/navigation'
-import { CustomMDX } from 'app/components/mdx'
-import { formatDate, getBlogPosts } from 'app/blog/utils'
-import { baseUrl } from 'app/sitemap'
-import { getProjectPosts } from 'app/projects/utils'
+import { formatDate } from 'app/blog/utils'
+import { getProjectBySlug, getProjectPosts } from 'app/projects/utils'
 
 export async function generateStaticParams() {
   let projects = getProjectPosts()
@@ -13,7 +11,7 @@ export async function generateStaticParams() {
 }
 
 export function generateMetadata({ params }) {
-  let project = getProjectPosts().find((project) => project.slug === params.slug)
+  let project = getProjectBySlug(params.slug)
   if (!project) {
     return
   }
@@ -27,7 +25,7 @@ export function generateMetadata({ params }) {
 }
 
 export default function Project({ params }) {
-  let project = getProjectPosts().find((project) => project.slug === params.slug)
+  let project = getProjectBySlug(params.slug)
 
   if (!project) {
     notFound()
@@ -53,8 +51,31 @@ export default function Project({ params }) {
           </a>
         )}
       </div>
-      <article className="prose">
-        <CustomMDX source={project.content} />
+      {project.metadata.techStack && (
+        <div className="flex flex-wrap gap-2 mb-6">
+          {project.metadata.techStack.map((tech) => (
+            <span key={tech} className="text-sm px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-full">
+              {tech}
+            </span>
+          ))}
+        </div>
+      )}
+      <article className="prose dark:prose-invert">
+        {project.content?.split('\n').map((line, i) => {
+          if (line.startsWith('## ')) {
+            return <h2 key={i} className="text-xl font-semibold mt-6 mb-3">{line.slice(3)}</h2>
+          }
+          if (line.startsWith('- ')) {
+            return <li key={i} className="ml-4">{line.slice(2)}</li>
+          }
+          if (line.match(/^\*\*(.+?)\*\*/)) {
+            return <p key={i} className="font-semibold">{line.replace(/\*\*/g, '')}</p>
+          }
+          if (line.trim()) {
+            return <p key={i} className="mb-2">{line}</p>
+          }
+          return null
+        })}
       </article>
     </section>
   )
