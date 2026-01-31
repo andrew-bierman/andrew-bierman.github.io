@@ -1,4 +1,4 @@
-import { BlogPosts } from 'app/components/posts'
+import { ProjectPosts } from 'app/components/project-posts'
 
 export default function Page() {
   return (
@@ -37,7 +37,7 @@ export default function Page() {
 
       <h2 className="mb-4 text-xl font-semibold">Projects</h2>
       <div className="my-8">
-        <BlogPosts />
+        <ProjectPosts />
       </div>
       
       <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-800">
