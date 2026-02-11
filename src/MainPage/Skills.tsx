@@ -20,49 +20,11 @@ const Skills = () => {
                             <br />
                         </div>
                         <div className="columns is-12">
-                            {/* <div
-                                className="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <i className="fad fa-meteor fa-3x"></i>
-                                <hr />
-                                <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                </h2>
-                            </div> */}
-                            {/* <div
-                                className="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <i className="fas fa-paint-brush fa-3x"></i>
-                                <hr />
-                                <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                </h2>
-                            </div> */}
-                            {/* <div
-                                className="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <i className="fas fa-rocket fa-3x"></i>
-                                <hr />
-                                <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                </h2>
-                            </div> */}
                             <div
                                 className="column is-4 has-text-centered"
                                 data-aos="fade-in"
                                 data-aos-easing="linear"
                             >
-                                {/* <i className="fad fa-meteor fa-3x"></i> */}
-                                {/* <i className="fa fa-brands fa-square-js"></i> */}
                                 <i className="fa-brands fa-js"></i>
                                 <hr />
                                 <h2>
@@ -85,7 +47,6 @@ const Skills = () => {
                                 data-aos="fade-in"
                                 data-aos-easing="linear"
                             >
-                                {/* <i className="fas fa-rocket fa-3x"></i> */}
                                 <i className="fa-brands fa-react"></i>
                                 <hr />
                                 <h2>
@@ -95,52 +56,15 @@ const Skills = () => {
                         </div>
                         <hr />
                         <div className="columns is-12">
-                            {/* <div
-                                className="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <i className="fas fa-upload fa-3x"></i>
-                                <hr />
-                                <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                </h2>
-                            </div> */}
-                            {/* <div
-                                className="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <i className="fas fa-bus fa-3x"></i>
-                                <hr />
-                                <h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                </h2>
-                            </div> */}
-                            {/* <div
-                                className="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <i className="fas fa-code fa-3x"></i>
-                                <hr />
-                                <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                </h2>
-                            </div> */}
                             <div
                                 className="column is-4 has-text-centered"
                                 data-aos="fade-in"
                                 data-aos-easing="linear"
                             >
-                                {/* <i className="fas fa-upload fa-3x"></i> */}
-                                <i className="fa-brands fa-node"></i>
+                                <i className="fa-brands fa-typescript"></i>
                                 <hr />
                                 <h2>
-                                    Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that executes JavaScript code outside a web browser.
+                                    TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
                                 </h2>
                             </div>
                             <div
@@ -148,11 +72,10 @@ const Skills = () => {
                                 data-aos="fade-in"
                                 data-aos-easing="linear"
                             >
-                                {/* <i className="fas fa-bus fa-3x"></i> */}
-                                <i className="fa-solid fa-database"></i>
+                                <i className="fa-brands fa-bun"></i>
                                 <hr />
                                 <h2>
-                                    A database is an organized collection of data stored and accessed electronically. Experience with PostgreSQL, MongoDB, and SQLite.
+                                    Bun is a fast JavaScript runtime, package manager, and test runner. Built with Zig.
                                 </h2>
                             </div>
                             <div
@@ -160,63 +83,96 @@ const Skills = () => {
                                 data-aos="fade-in"
                                 data-aos-easing="linear"
                             >
-                                {/* <i className="fas fa-code fa-3x"></i> */}
-                                <i className="fa-solid fa-server"></i>
+                                <i className="fa-brands fa-rust"></i>
                                 <hr />
                                 <h2>
-                                    A server is a computer program or a device that provides functionality for other programs or devices. Experience with Express.js and Flask.
+                                    Rust is a language empowering everyone to build reliable and efficient software. Used for performance-critical components.
                                 </h2>
                             </div>
                         </div>
                         <hr />
                         <div className="columns is-12">
-                            {/* <div
-                                className="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <i className="fas fa-upload fa-3x"></i>
-                                <hr />
-                                <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                </h2>
-                            </div> */}
-                            {/* <div
-                                className="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <i className="fas fa-bus fa-3x"></i>
-                                <hr />
-                                <h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                </h2>
-                            </div> */}
-                            {/* <div
-                                className="column is-4 has-text-centered"
-                                data-aos="fade-in"
-                                data-aos-easing="linear"
-                            >
-                                <i className="fas fa-code fa-3x"></i>
-                                <hr />
-                                <h2>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                    do eiusmod tempor incididunt ut labore et dolore magna aliqua
-                                </h2>
-                            </div> */}
                             <div
                                 className="column is-4 has-text-centered"
                                 data-aos="fade-in"
                                 data-aos-easing="linear"
                             >
-                                {/* <i className="fas fa-upload fa-3x"></i> */}
-                                {/* <i className="fa-brands fa-node"></i> */}
+                                <i className="fa-brands fa-golang"></i>
+                                <hr />
+                                <h2>
+                                    Go is an open-source programming language that makes it easy to build simple, reliable, and efficient software.
+                                </h2>
+                            </div>
+                            <div
+                                className="column is-4 has-text-centered"
+                                data-aos="fade-in"
+                                data-aos-easing="linear"
+                            >
+                                <i className="fa-solid fa-robot"></i>
+                                <hr />
+                                <h2>
+                                    Vercel AI SDK provides tools for building AI-powered applications with streaming, React hooks, and provider integrations.
+                                </h2>
+                            </div>
+                            <div
+                                className="column is-4 has-text-centered"
+                                data-aos="fade-in"
+                                data-aos-easing="linear"
+                            >
+                                <i className="fa-solid fa-network-wired"></i>
+                                <hr />
+                                <h2>
+                                    MCP (Model Context Protocol) is a protocol for connecting AI assistants to external tools and data sources.
+                                </h2>
+                            </div>
+                        </div>
+                        <hr />
+                        <div className="columns is-12">
+                            <div
+                                className="column is-4 has-text-centered"
+                                data-aos="fade-in"
+                                data-aos-easing="linear"
+                            >
+                                <i className="fa-solid fa-brain"></i>
+                                <hr />
+                                <h2>
+                                    RAG (Retrieval-Augmented Generation) combines retrieval systems with LLMs for more accurate and contextual responses.
+                                </h2>
+                            </div>
+                            <div
+                                className="column is-4 has-text-centered"
+                                data-aos="fade-in"
+                                data-aos-easing="linear"
+                            >
+                                <i className="fa-solid fa-database"></i>
+                                <hr />
+                                <h2>
+                                    Vector databases (Pinecone, pgvector, Chroma) enable semantic search and storage of embeddings for AI applications.
+                                </h2>
+                            </div>
+                            <div
+                                className="column is-4 has-text-centered"
+                                data-aos="fade-in"
+                                data-aos-easing="linear"
+                            >
+                                <i className="fa-brands fa-node"></i>
+                                <hr />
+                                <h2>
+                                    Node.js is an open-source, cross-platform, back-end JavaScript runtime environment.
+                                </h2>
+                            </div>
+                        </div>
+                        <hr />
+                        <div className="columns is-12">
+                            <div
+                                className="column is-4 has-text-centered"
+                                data-aos="fade-in"
+                                data-aos-easing="linear"
+                            >
                                 <i className="fa-brands fa-git-alt"></i>
                                 <hr />
                                 <h2>
-                                    Git is a distributed version-control system for tracking changes in source code during software development. Experience with Git and GitHub.
+                                    Git is a distributed version-control system for tracking changes in source code during software development.
                                 </h2>
                             </div>
                             <div
@@ -224,12 +180,10 @@ const Skills = () => {
                                 data-aos="fade-in"
                                 data-aos-easing="linear"
                             >
-                                {/* <i className="fas fa-bus fa-3x"></i> */}
-                                {/* <i className="fa-solid fa-database"></i> */}
                                 <i className="fa-brands fa-aws"></i>
                                 <hr />
                                 <h2>
-                                    Amazon Web Services (AWS) provides on-demand cloud computing platforms and APIs to individuals, companies, and governments.
+                                    Amazon Web Services (AWS) provides on-demand cloud computing platforms and APIs.
                                 </h2>
                             </div>
                             <div
@@ -237,12 +191,10 @@ const Skills = () => {
                                 data-aos="fade-in"
                                 data-aos-easing="linear"
                             >
-                                {/* <i className="fas fa-code fa-3x"></i> */}
-                                {/* <i className="fa-solid fa-server"></i> */}
-                                <i className="fa-solid fa-paintbrush"></i>
+                                <i className="fa-brands fa-docker"></i>
                                 <hr />
                                 <h2>
-                                    For design and media production, I utilize the entire Adobe Creative Suite (Figma, Photoshop, Illustrator, Premiere Pro, and After Effects).
+                                    Docker enables containerization for consistent deployments and scalable infrastructure.
                                 </h2>
                             </div>
                         </div>

@@ -20,6 +20,48 @@ const Work = () => {
 
     const cards: Card[] = [
         {
+            title: "OpenClaw",
+            subtitle: "Open-source agent infrastructure platform",
+            description: [
+                `Tech Stack: TypeScript, Bun, Rust, React, Go, MCP, PostgreSQL.`,
+                `Built an open-source platform for building, orchestrating, and deploying AI agents with multi-node support.`,
+                `Designed a plugin architecture enabling extensibility for tools, memory systems, and model providers.`,
+                `Implemented multi-model routing with cost tracking, telemetry, and agent state management.`,
+                `Created local-first tools prioritizing privacy, offline capability, and user sovereignty.`],
+            image_link: "https://fontawesome.com/social/bug?f=classic&s=&v=5",
+            image: archer,
+            live_link: "https://openclaw.com/",
+            repo_link: 'https://github.com/openclawdev/openclaw'
+        },
+        {
+            title: "ai-pipe",
+            subtitle: "Unified CLI for AI interactions",
+            description: [
+                `Tech Stack: TypeScript, Bun, Rust, Vercel AI SDK, Ollama.`,
+                `Developed a cross-platform CLI for unified access to multiple AI providers (OpenAI, Anthropic, Gemini, Perplexity, local LLMs).`,
+                `Implemented streaming responses, model switching, and provider-agnostic prompts.`,
+                `Achieved sub-100ms cold starts with Bun runtime and native binary distribution.`,
+                `Enabled local model inference with Ollama integration and RAG capabilities.`],
+            image_link: "https://fontawesome.com/social/pipeline?f=classic&s=&v=5",
+            image: whiskord,
+            live_link: "https://github.com/andrew-bierman/ai-pipe",
+            repo_link: 'https://github.com/andrew-bierman/ai-pipe'
+        },
+        {
+            title: "IgniteIQ",
+            subtitle: "AI-powered development platform",
+            description: [
+                `Tech Stack: TypeScript, React, Node.js, Python, Vector Databases, RAG pipelines.`,
+                `Built AI-powered developer tools for code analysis, refactoring suggestions, and intelligent search.`,
+                `Implemented RAG systems over documentation and codebase context for contextual AI assistance.`,
+                `Designed vector database integration for semantic code search and similarity detection.`,
+                `Contributed to real-time collaboration features powered by LLMs for pair programming.`],
+            image_link: "https://fontawesome.com/social/fire?f=classic&s=&v=5",
+            image: treebnb,
+            live_link: "https://igniteiq.io/",
+            repo_link: 'https://github.com/igniteiq'
+        },
+        {
             title: "Archer",
             subtitle: "A real-time stock exchange platform",
             description: [

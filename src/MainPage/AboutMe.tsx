@@ -19,25 +19,33 @@ const AboutMe = () => {
                             <p className="is-larger">
                                 &emsp;&emsp;
                                 <strong>
-                                    Experienced software engineer with a background in communications and business.
+                                    Software engineer specializing in AI/ML systems, agent infrastructure, and local-first applications.
                                 </strong>
                             </p>
                             <br />
                             <p>
-                                I'm a software engineer with a passion for developing innovative and user-friendly web applications.
+                                I'm a software engineer building AI agents and infrastructure for the next generation of intelligent applications.
                                 <br></br>
                                 <br></br>
-                                With experience in JavaScript, Python, Node.js, React, Redux, Flask, SQL, Git, HTML5, CSS3, and WordPress - I have successfully delivered several projects, including a real-time stock exchange platform, a real-time messaging application, and a treehouse rental platform.
+                                With expertise in TypeScript, Bun, Rust, Go, React, Node.js, Vercel AI SDK, MCP (Model Context Protocol), RAG systems, and vector databases - I build systems that bridge the gap between AI models and practical applications. I develop local-first tools that prioritize privacy, performance, and user control.
                                 <br></br>
                                 <br></br>
-                                My strong communication skills and project management experience, developed through my previous role as Communications Manager, enable me to work effectively with team members and deliver high-quality results. I hold a Bachelor's Degree in Communications & Business from the University of Colorado @ Boulder.
+                                Currently building <strong>OpenClaw</strong>, an open-source platform for agent infrastructure, and <strong>ai-pipe</strong>, a unified CLI for AI interactions. Previously at <strong>IgniteIQ</strong> working on AI-powered development tools.
                             </p>
                             <br />
                             <p>
                                 <strong>
                                     <i className="fad fa-solid fa-map-marker-alt fa-lg"></i>
                                     &nbsp;
-                                    Washington D.C.
+                                    Salt Lake City, Utah
+                                </strong>
+                            </p>
+                            <br />
+                            <p>
+                                <strong>
+                                    <i className="fad fa-solid fa-envelope fa-lg"></i>
+                                    &nbsp;
+                                    <a href="mailto:andrew.bierman@colorado.edu">andrew.bierman@colorado.edu</a>
                                 </strong>
                             </p>
                             <br></br>
