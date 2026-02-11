@@ -1,0 +1,14 @@
+/* MainPage specific styles */
+.custom-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.custom-card-footer {
+    margin-top: auto;
+}
+
+.card-content {
+    flex-grow: 1;
+}

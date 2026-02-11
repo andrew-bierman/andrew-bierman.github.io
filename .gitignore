@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Bun-specific entries
+.bun
+bun.lockb
+.bun install
+
+# Build output
+dist/
+build/

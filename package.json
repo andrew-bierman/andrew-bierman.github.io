@@ -1,0 +1,34 @@
+{
+  "name": "andrew-bierman.github.io",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://andrew-bierman.github.io/",
+  "type": "module",
+  "scripts": {
+    "dev": "bun run --hot src/index.tsx",
+    "start": "bun run src/index.tsx",
+    "build": "bun build src/index.tsx --outdir dist --target browser && cp public/index.html dist/ && cp -r public/css dist/",
+    "predeploy": "bun run build",
+    "deploy": "gh-pages -d dist",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "jquery": "^3.6.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^5.1.0"
+  },
+  "devDependencies": {
+    "bun-types": "^1.0.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/jquery": "^3.5.29",
+    "typescript": "^5.0.0",
+    "gh-pages": "^5.0.0"
+  },
+  "engines": {
+    "bun": ">=1.0.0"
+  }
+}
